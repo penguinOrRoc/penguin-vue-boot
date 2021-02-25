@@ -1,0 +1,12 @@
+spring:
+   datasource:
+      type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+      driver-class-name: com.mysql.cj.jdbc.Driver            # mysql驱动包
+      url: jdbc:mysql://10.100.100.7:3306/penguin_vueboot?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 1qaz@WSX
+#配置mybatis规则
+mybatis:
+  #config-location: classpath:mybatis/mybatis-config.xml  # 全局配置文件的配置会覆盖application.yml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#  type-aliases-package: com.penguin.springcloud.entities    # 所有Entity别名类所在包
